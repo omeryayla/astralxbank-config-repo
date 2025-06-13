@@ -2,6 +2,9 @@ server:
   port: 8083
 
 spring:
+  application:
+    name: transaction-service
+
   datasource:
     url: jdbc:postgresql://localhost:5432/astralx_transactiondb
     username: bankuser
@@ -13,10 +16,16 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
   cloud:
     consul:
-          discovery:
-            prefer-ip-address: true
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        prefer-ip-address: true
+      config:
+        fail-fast: true
 
 management:
   endpoints:
