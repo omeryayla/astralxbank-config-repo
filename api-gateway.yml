@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+endpoint:
+  health:
+    show-details: always
+
+# Test property → kontrol etmek için loga bastıracağız
+test-property: HelloFromApiGatewayConfig
