@@ -29,4 +29,5 @@ endpoint:
     show-details: always
 
 # Test property → kontrol etmek için loga bastıracağız
-test-property: HelloFromApiGatewayConfig
+my:
+  test-property: HelloFromConfigServer-TransactionService
