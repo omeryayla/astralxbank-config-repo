@@ -30,4 +30,4 @@ endpoint:
 
 # Test property → kontrol etmek için loga bastıracağız
 my:
-  test-property: HelloFromConfigServer-TransactionService
+  test-property: HelloFromConfigServer-ApiGateway
