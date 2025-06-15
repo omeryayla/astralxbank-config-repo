@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    consul:
+      discovery:
+        prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+my:
+  test-property: HelloFromSharedConfig
