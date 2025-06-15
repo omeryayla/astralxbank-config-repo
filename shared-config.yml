@@ -1,4 +1,5 @@
 spring:
+  profiles: shared-config
   cloud:
     consul:
       discovery:
@@ -12,7 +13,6 @@ management:
   endpoint:
     health:
       show-details: always
-  profiles: shared-config
 
 my:
   test-property: HelloFromSharedConfig
