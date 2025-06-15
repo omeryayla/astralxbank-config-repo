@@ -13,6 +13,3 @@ spring:
     consul:
       discovery:
         prefer-ip-address: true
-  config:
-    activate:
-      on-profile: shared-config
