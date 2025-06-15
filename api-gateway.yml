@@ -30,18 +30,3 @@ spring:
       port: 8500
       discovery:
         enabled: true
-        prefer-ip-address: true
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-
-endpoint:
-  health:
-    show-details: always
-
-# Test property → kontrol etmek için loga bastıracağız
-my:
-  test-property: HelloFromConfigServer-ApiGateway
