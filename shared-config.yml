@@ -12,6 +12,7 @@ management:
   endpoint:
     health:
       show-details: always
+  profiles: shared-config
 
 my:
   test-property: HelloFromSharedConfig
