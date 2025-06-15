@@ -1,18 +1,18 @@
-spring:
-  profiles: shared-config
-  cloud:
-    consul:
-      discovery:
-        prefer-ip-address: true
-
 management:
+  endpoint:
+    health:
+      show-details: always
   endpoints:
     web:
       exposure:
         include: '*'
-  endpoint:
-    health:
-      show-details: always
-
 my:
   test-property: HelloFromSharedConfig
+spring:
+  cloud:
+    consul:
+      discovery:
+        prefer-ip-address: true
+  config:
+    activate:
+      on-profile: shared-config
